@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mgrdata>
+  <plugin name="pmteamspeak.php">
+    <group>processing_module</group>
+    <author>GlobalArtGroup LLC</author>
+    <params>
+      <type name="voip"/>
+    </params>
+    <msg name="desc_short" lang="ru">TeamSpeak 3</msg>
+    <msg name="desc_short" lang="en">TeamSpeak 3</msg>
+    <msg name="desc_full" lang="ru">Интеграция с TeamSpeak 3</msg>
+    <msg name="desc_full" lang="en">Интеграция с TeamSpeak 3</msg>
+    <msg name="price" lang="ru">Бесплатно</msg>
+    <msg name="price" lang="en">Free</msg>
+  </plugin>
+
+  <metadata name="processing.edit.pmteamspeak.php" type="form">
+    <form title="name">
+      <page name="connect">
+        <field name="host">
+          <input name="host" required="yes" type="text"/>
+        </field>
+        <field name="query_ip">
+          <input name="query_ip" required="yes" type="text"/>
+        </field>
+        <field name="query_port">
+          <input name="query_port" required="yes" type="text"/>
+        </field>
+
+        <field name="username">
+          <input name="username" required="yes" type="text"/>
+        </field>
+
+        <field name="password">
+          <input name="password" required="yes" type="password"/>
+        </field>
+      </page> 
+    </form>
+  </metadata>
+
+  <lang name="ru">
+  
+    <messages name="processing.edit.pmteamspeak.php">
+      <msg name="host">Хост сервера</msg>
+      <msg name="hint_host">Хост или IP адрес, по которому будет доступен сервер</msg>
+      <msg name="query_ip">Query IP</msg>
+      <msg name="hint_query_ip">Query IP-адрес или хост сервера</msg>
+      <msg name="query_port">Query порт</msg>
+      <msg name="hint_query_port">Query порт сервера</msg>
+    </messages>
+  </lang>
+
+
+
+</mgrdata>
